@@ -11,10 +11,11 @@ def getTimestampFromLine(line, part):
 
 def getTimeFromLine(line):
     secondsSinceBeginning = float(getTimestampFromLine(line, 'begin'))
+    hours = math.floor(secondsSinceBeginning / 3600);
     minutes = math.floor(secondsSinceBeginning / 60);
     seconds = float(secondsSinceBeginning % 60)
 
-    return str(minutes) + ":" + str(format(seconds, '.1f'))
+    return str(hours).zfill(2) + ":" + str(minutes).zfill(2) + ":" + str(format(seconds, '.1f')).zfill(4)
 
 def getBeginningFromLine(line):
     return getTimestampFromLine(line, 'begin')
@@ -50,6 +51,4 @@ for file in files:
             outFile[season][episode].append(episodeInfo)
 
 print(json.dumps(outFile))
-
-
-
+#print(json.dumps(outFile, sort_keys=True, indent=4))

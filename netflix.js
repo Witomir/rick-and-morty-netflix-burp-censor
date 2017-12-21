@@ -1,206 +1,206 @@
-var muteData = {
+mutePoints ={
     "1": {
         "1": [
-            [369.6, 4.5],
-            [481.9, 3.9],
-            [577.5, 2.9],
-            [673.0, 3.6],
-            [750.4, 2.3],
-            [893.2, 4.0],
-            [897.4, 2.5],
-            [1134.4, 3.4],
-            [1157.6, 4.4],
-            [1174.2, 2.8],
-            [1226.2, 3.7]
+            ["00:06:09.6", 4.5],
+            ["00:08:01.9", 3.9],
+            ["00:09:37.5", 2.9],
+            ["00:11:13.0", 3.6],
+            ["00:12:30.4", 2.3],
+            ["00:14:53.2", 4.0],
+            ["00:14:57.4", 2.5],
+            ["00:18:54.4", 3.4],
+            ["00:19:17.6", 4.4],
+            ["00:19:34.2", 2.8],
+            ["00:20:26.2", 3.7]
         ],
         "2": [],
         "3": [
-            [83.3, 3.7],
-            [93.7, 3.4],
-            [187.4, 3.5],
-            [201.1, 2.0],
-            [526.8, 4.0],
-            [1203.5, 2.7]
+            ["00:01:23.3", 3.7],
+            ["00:01:33.7", 3.4],
+            ["00:03:07.4", 3.5],
+            ["00:03:21.1", 2.0],
+            ["00:08:46.8", 4.0],
+            ["00:20:03.5", 2.7]
         ],
         "4": [
-            [177.0, 3.9],
-            [316.3, 3.1],
-            [518.6, 3.2],
-            [773.6, 3.2],
-            [1148.2, 2.7]
+            ["00:02:57.0", 3.9],
+            ["00:05:16.3", 3.1],
+            ["00:08:38.6", 3.2],
+            ["00:12:53.6", 3.2],
+            ["00:19:08.2", 2.7]
         ],
         "5": [
-            [177.6, 3.1],
-            [257.3, 2.5],
-            [466.0, 2.1]
+            ["00:02:57.6", 3.1],
+            ["00:04:17.3", 2.5],
+            ["00:07:46.0", 2.1]
         ],
         "6": [
-            [212.6, 2.7]
+            ["00:03:32.6", 2.7]
         ],
         "7": [
-            [6.9, 3.9],
-            [69.6, 4.2],
-            [202.0, 3.5],
-            [443.1, 2.3],
-            [525.6, 3.6],
-            [921.0, 2.4],
-            [1234.9, 2.1]
+            ["00:00:06.9", 3.9],
+            ["00:01:09.6", 4.2],
+            ["00:03:22.0", 3.5],
+            ["00:07:23.1", 2.3],
+            ["00:08:45.6", 3.6],
+            ["00:15:21.0", 2.4],
+            ["00:20:34.9", 2.1]
         ],
         "8": [
-            [59.0, 2.4],
-            [959.6, 2.9],
-            [962.5, 3.4],
-            [1174.3, 4.7],
-            [1183.8, 2.2],
-            [1190.1, 1.8]
+            ["00:00:59.0", 2.4],
+            ["00:15:59.6", 2.9],
+            ["00:16:02.5", 3.4],
+            ["00:19:34.3", 4.7],
+            ["00:19:43.8", 2.2],
+            ["00:19:50.1", 1.8]
         ],
         "9": [
-            [113.3, 3.4],
-            [252.0, 3.5],
-            [328.5, 2.8],
-            [336.7, 3.5],
-            [412.3, 1.5],
-            [847.3, 2.4],
-            [973.2, 1.1],
-            [1266.3, 4.5],
-            [1273.1, 1.6]
+            ["00:01:53.3", 3.4],
+            ["00:04:12.0", 3.5],
+            ["00:05:28.5", 2.8],
+            ["00:05:36.7", 3.5],
+            ["00:06:52.3", 1.5],
+            ["00:14:07.3", 2.4],
+            ["00:16:13.2", 1.1],
+            ["00:21:06.3", 4.5],
+            ["00:21:13.1", 1.6]
         ],
         "10": [
-            [105.5, 3.7],
-            [200.4, 3.4],
-            [237.7, 3.6],
-            [415.3, 2.5],
-            [454.7, 4.3],
-            [465.2, 2.4],
-            [628.4, 3.0],
-            [873.4, 3.3],
-            [1093.8, 3.5],
-            [1156.3, 3.6],
-            [1196.2, 2.8]
+            ["00:01:45.5", 3.7],
+            ["00:03:20.4", 3.4],
+            ["00:03:57.7", 3.6],
+            ["00:06:55.3", 2.5],
+            ["00:07:34.7", 4.3],
+            ["00:07:45.2", 2.4],
+            ["00:10:28.4", 3.0],
+            ["00:14:33.4", 3.3],
+            ["00:18:13.8", 3.5],
+            ["00:19:16.3", 3.6],
+            ["00:19:56.2", 2.8]
         ],
         "11": [
-            [137.2, 3.1],
-            [167.8, 4.2],
-            [531.3, 3.4],
-            [915.7, 1.7],
-            [1185.4, 2.9],
-            [1245.4, 2.7]
+            ["00:02:17.2", 3.1],
+            ["00:02:47.8", 4.2],
+            ["00:08:51.3", 3.4],
+            ["00:15:15.7", 1.7],
+            ["00:19:45.4", 2.9],
+            ["00:20:45.4", 2.7]
         ]
     },
     "2": {
         "1": [
-            [42.8, 2.7],
-            [406.7, 2.2],
-            [570.9, 3.1],
-            [714.4, 2.2],
-            [742.4, 2.1]
+            ["00:00:42.8", 2.7],
+            ["00:06:46.7", 2.2],
+            ["00:09:30.9", 3.1],
+            ["00:11:54.4", 2.2],
+            ["00:12:22.4", 2.1]
         ],
         "2": [
-            [163.7, 3.3]
+            ["00:02:43.7", 3.3]
         ],
         "3": [
-            [23.4, 2.7],
-            [241.5, 3.0],
-            [458.1, 2.0],
-            [848.6, 2.2],
-            [867.1, 1.9],
-            [1066.8, 2.9],
-            [1334.3, 3.0]
+            ["00:00:23.4", 2.7],
+            ["00:04:01.5", 3.0],
+            ["00:07:38.1", 2.0],
+            ["00:14:08.6", 2.2],
+            ["00:14:27.1", 1.9],
+            ["00:17:46.8", 2.9],
+            ["00:22:14.3", 3.0]
         ],
         "4": [
-            [369.2, 2.5]
+            ["00:06:09.2", 2.5]
         ],
         "5": [
-            [52.8, 4.9],
-            [177.1, 3.7],
-            [578.3, 1.7],
-            [580.1, 2.6],
-            [840.8, 2.2]
+            ["00:00:52.8", 4.9],
+            ["00:02:57.1", 3.7],
+            ["00:09:38.3", 1.7],
+            ["00:09:40.1", 2.6],
+            ["00:14:00.8", 2.2]
         ],
         "6": [
-            [16.1, 3.1],
-            [38.2, 3.1],
-            [145.3, 3.2],
-            [428.1, 4.6],
-            [488.9, 2.2],
-            [1032.8, 2.4]
+            ["00:00:16.1", 3.1],
+            ["00:00:38.2", 3.1],
+            ["00:02:25.3", 3.2],
+            ["00:07:08.1", 4.6],
+            ["00:08:08.9", 2.2],
+            ["00:17:12.8", 2.4]
         ],
         "7": [
-            [407.5, 3.1]
+            ["00:06:47.5", 3.1]
         ],
         "8": [
-            [41.6, 3.2]
+            ["00:00:41.6", 3.2]
         ],
         "9": [
-            [12.1, 2.2],
-            [174.2, 1.3],
-            [247.5, 1.4],
-            [492.6, 1.9],
-            [969.3, 1.6],
-            [1010.1, 3.5],
-            [1113.2, 2.0]
+            ["00:00:12.1", 2.2],
+            ["00:02:54.2", 1.3],
+            ["00:04:07.5", 1.4],
+            ["00:08:12.6", 1.9],
+            ["00:16:09.3", 1.6],
+            ["00:16:50.1", 3.5],
+            ["00:18:33.2", 2.0]
         ],
         "10": [
-            [59.7, 1.5],
-            [433.1, 1.4],
-            [470.8, 2.9],
-            [744.3, 3.0]
+            ["00:00:59.7", 1.5],
+            ["00:07:13.1", 1.4],
+            ["00:07:50.8", 2.9],
+            ["00:12:24.3", 3.0]
         ]
     },
     "3": {
         "1": [
-            [687.9, 2.4],
-            [701.6, 1.9],
-            [796.0, 1.9],
-            [920.4, 4.1],
-            [1071.6, 1.7],
-            [1289.3, 2.9]
+            ["00:11:27.9", 2.4],
+            ["00:11:41.6", 1.9],
+            ["00:13:16.0", 1.9],
+            ["00:15:20.4", 4.1],
+            ["00:17:51.6", 1.7],
+            ["00:21:29.3", 2.9]
         ],
         "2": [
-            [1174.0, 2.4]
+            ["00:19:34.0", 2.4]
         ],
         "3": [
-            [1175.6, 1.7]
+            ["00:19:35.6", 1.7]
         ],
         "4": [
-            [288.2, 3.9],
-            [492.5, 2.4],
-            [604.4, 2.0],
-            [628.2, 2.2],
-            [645.9, 3.4],
-            [722.4, 4.8],
-            [794.5, 1.6],
-            [1154.9, 2.8]
+            ["00:04:48.2", 3.9],
+            ["00:08:12.5", 2.4],
+            ["00:10:04.4", 2.0],
+            ["00:10:28.2", 2.2],
+            ["00:10:45.9", 3.4],
+            ["00:12:02.4", 4.8],
+            ["00:13:14.5", 1.6],
+            ["00:19:14.9", 2.8]
         ],
         "5": [
-            [36.5, 2.1]
+            ["00:00:36.5", 2.1]
         ],
         "6": [
-            [42.3, 1.9],
-            [278.3, 2.1],
-            [280.5, 1.7],
-            [853.1, 2.0],
-            [964.0, 1.9],
-            [966.0, 2.4],
-            [1227.1, 2.0]
+            ["00:00:42.3", 1.9],
+            ["00:04:38.3", 2.1],
+            ["00:04:40.5", 1.7],
+            ["00:14:13.1", 2.0],
+            ["00:16:04.0", 1.9],
+            ["00:16:06.0", 2.4],
+            ["00:20:27.1", 2.0]
         ],
         "7": [
-            [25.6, 3.3],
-            [43.7, 2.0],
-            [369.2, 1.7],
-            [1035.3, 1.6],
-            [1141.0, 1.9]
+            ["00:00:25.6", 3.3],
+            ["00:00:43.7", 2.0],
+            ["00:06:09.2", 1.7],
+            ["00:17:15.3", 1.6],
+            ["00:19:01.0", 1.9]
         ],
         "8": [
-            [103.3, 2.3],
-            [105.7, 2.7]
+            ["00:01:43.3", 2.3],
+            ["00:01:45.7", 2.7]
         ],
         "9": [
-            [614.8, 2.3]
+            ["00:10:14.8", 2.3]
         ],
         "10": [
-            [545.8, 1.4],
-            [1270.6, 1.8]
+            ["00:09:05.8", 1.4],
+            ["00:21:10.6", 1.8]
         ]
     }
 };
@@ -211,69 +211,64 @@ var currentSeason;
 var currentEpisode;
 
 chrome.runtime.onMessage.addListener(data => {
+    //if(request.scriptOptions && request.scriptOptions.imageUrl){}
     if (data.action == "watching") {
-        disableAppLoop();
-        startLookingForVideo();
+        console.log("page URL changed, reloading app");
+        restartApp();
     }
 });
 
-function checkTimeLoop(){
-    if(videoElement){
-        var currentVideoTime = videoElement.currentTime;
-        currentVideoTime = Math.round(currentVideoTime * 10);
-        var curentData = muteData[currentSeason][currentEpisode];
-        for(var i = 0; i < curentData.length; i++){
-            var currentPoint = curentData[i];
-            var muteTimestamp = currentPoint[0] * 10;
-            var muteDuration = currentPoint[1] * 1000;
-
-            if(currentVideoTime == muteTimestamp) {
-                muteVideo();
-                unmuteVideoAfter(muteDuration);
-            }
-        }
-    }
+function restartApp() {
+    disableApp();
+    startLookingForVideoElement();
 }
 
-function getSeasonNumberFromVideoTitle(videoTitle) {
-    return parseInt(videoTitle.substr(1,1));
+function runApp (video, videoTitle) {
+    console.log(videoTitle);
+    currentSeason = getSeasonNumberFromVideoTitle(videoTitle);
+    currentEpisode = getEpisodeNumberFromVideoTitle(videoTitle);
+    appIntervalId = setInterval(checkTimeLoop, 100);
 };
 
-function getEpisodeNumberFromVideoTitle(videoTitle) {
-    return parseInt(videoTitle.substr(4,6));
-};
-
-function runApp (video) {
-    var videoTitle = document.querySelector('.video-title span');
-    if(videoTitle){
-        console.log(videoTitle.innerText);
-        currentSeason = getSeasonNumberFromVideoTitle(videoTitle.innerText);
-        currentEpisode = getEpisodeNumberFromVideoTitle(videoTitle.innerText);
-        appIntervalId = setInterval(checkTimeLoop, 100);
-    }
-};
-
-function startLookingForVideo () {
+function startLookingForVideoElement () {
     var video = document.getElementsByTagName("video");
-    if (video.length > 0) {
+    var videoTitle = document.querySelector('.video-title span');
+    if (video.length > 0 && videoTitle != null) {
         videoElement = video[0];
-        runApp(videoElement);
+        runApp(videoElement, videoTitle.innerText);
     } else {
         sheduleNextVideoLookup();
     }
 };
 
 function sheduleNextVideoLookup(){
-    setTimeout(startLookingForVideo, 50);
+    setTimeout(startLookingForVideoElement, 100);
 }
 
 sheduleNextVideoLookup();
 
 
+function checkTimeLoop(){
+    if(videoElement){
+        var currentVideoTime = videoElement.currentTime;
+        currentVideoTime = Math.round(currentVideoTime * 10);
+        if(mutePoints[currentSeason] && mutePoints[currentSeason][currentEpisode]){
+            var curentEpisodeMuteData = mutePoints[currentSeason][currentEpisode];
+            for(var i = 0; i < curentEpisodeMuteData.length; i++){
+                var currentPoint = curentEpisodeMuteData[i];
+                var muteTimestamp = timeToTimestamp(currentPoint[0]) * 10;
+                var muteDuration = currentPoint[1] * 1000;
 
+                if(currentVideoTime == muteTimestamp) {
+                    muteVideo();
+                    unmuteVideoAfter(muteDuration);
+                }
+            }
+        }
+    }
+}
 
-
-function disableAppLoop() {
+function disableApp() {
     clearInterval(appIntervalId);
 };
 
@@ -288,3 +283,19 @@ function unmuteVideoAfter(bleepDuration) {
         console.log("unmuted");
     }, bleepDuration);
 }
+
+function getSeasonNumberFromVideoTitle(videoTitle) {
+    return parseInt(videoTitle.substr(1,1));
+};
+
+function getEpisodeNumberFromVideoTitle(videoTitle) {
+    return parseInt(videoTitle.substr(4,6));
+};
+
+var timeToTimestamp = function (customTimestamp) {
+    var hours = parseInt(customTimestamp.substr(0,2));
+    var minutes = parseInt(customTimestamp.substr(3,2));
+    var seconds = parseInt(customTimestamp.substr(6,4));
+
+    return seconds + 60*minutes + 60*60*hours;
+};
