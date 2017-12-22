@@ -26,7 +26,8 @@
             "matches": ["https://www.netflix.com/*"],
             "js": [
                 "netflix.js"
-            ]
+            ],
+            "css" : ["style.css"]
         }
     ]
 }

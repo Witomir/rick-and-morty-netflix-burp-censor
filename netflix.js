@@ -1,4 +1,4 @@
-mutePoints ={
+var mutePoints ={
     "1": {
         "1": [
             ["00:06:09.6", 4.5],
@@ -228,6 +228,7 @@ function runApp (video, videoTitle) {
     currentSeason = getSeasonNumberFromVideoTitle(videoTitle);
     currentEpisode = getEpisodeNumberFromVideoTitle(videoTitle);
     appIntervalId = setInterval(checkTimeLoop, 100);
+    addTimestamperButton(currentSeason, currentEpisode);
 };
 
 function startLookingForVideoElement () {
@@ -298,4 +299,86 @@ var timeToTimestamp = function (customTimestamp) {
     var seconds = parseInt(customTimestamp.substr(6,4));
 
     return seconds + 60*minutes + 60*60*hours;
+};
+
+function addLeadingZero(number){
+    return number < 10 ? "0" + number : number;
+}
+
+var timestampToTime = function (time) {
+    var seconds = time;
+    var hundredsOfSeconds = Math.round((time*10 - parseInt(time*10)) * 10);
+    var date = new Date(seconds * 1000);
+    var hh = addLeadingZero(date.getUTCHours());
+    var mm = addLeadingZero(date.getUTCMinutes());
+    var ss = addLeadingZero(date.getSeconds());
+    return hh + ":" + mm + ":" + ss + "." + hundredsOfSeconds;
+};
+
+var addFakeArray = function (time) {
+    return `["${time}", 0.5],`;
+};
+var addTimestamperButton = function (currentSeason, currentEpisode) {
+    var rootElement = document.querySelector('.PlayerControls--button-control-row');
+    var addTimeArea = document.createElement('div');
+    addTimeArea.setAttribute('class', 'touchable PlayerControls--control-element nfp-popup-control');
+
+    var addButton = document.createElement('button');
+    addButton.innerHTML = "Add burp"
+    addButton.setAttribute('style', 'color:black; width:50px');
+    addButton.setAttribute('class', 'custom-js-button');
+    addButton.addEventListener('click', () => {
+        var textarea = document.getElementById('mute-data-content');
+        var time = videoElement.currentTime;
+        var timeWord = addFakeArray(timestampToTime(time));
+        textarea.value += timeWord + "\n";
+    });
+
+
+
+    var showDataButton = document.createElement('button');
+    showDataButton.innerHTML = "Show burps"
+    showDataButton.setAttribute('class', 'custom-js-button');
+    showDataButton.setAttribute('style', 'color:black; width:50px');
+    showDataButton.addEventListener('click', function showModal() {
+        modal.style.display = "block";
+    });
+
+    addTimeArea.appendChild(addButton);
+    addTimeArea.appendChild(showDataButton);
+    rootElement.appendChild(addTimeArea);
+
+    var modalContent = `
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+          <div class="modal-header">
+            <span class="close">&times;</span>
+            <h2>Burp timestamps</h2>
+          </div>
+          <div class="modal-body">
+            <textarea cols="100" rows="20" id="mute-data-content"></textarea>
+          </div>
+          <div class="modal-footer">
+            <h3></h3>
+          </div>
+        </div>
+    </div>`;
+
+    var modalElement = document.createElement('div');
+    modalElement.innerHTML = modalContent;
+    document.body.appendChild(modalElement);
+
+    var modal = document.getElementById('myModal');
+    var span = document.getElementsByClassName("close")[0];
+    span.onclick = function() {
+        modal.style.display = "none";
+    }
+
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
+    var textarea = document.getElementById('mute-data-content');
+    textarea.value += `S${currentSeason}E${currentEpisode}:\n`;
 };
