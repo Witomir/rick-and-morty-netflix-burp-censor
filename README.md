@@ -12,7 +12,7 @@ which is crap, but burps are not so disturbing.
 4. Click on "Load unpacked extension" and choose folder where you cloned this repo
 
 ## For devs
-To create the initial data I downloaded all subtitles from Netflix using [modified tampermonkey script](tampermonkey/tampermonkey.js) 
+To create the initial data I downloaded all subtitles from Netflix using [modified tampermonkey script](subtitle_download_script/tampermonkey.js) 
 from [https://greasyfork.org/pl/scripts/26654-netflix-subtitle-downloader](https://greasyfork.org/pl/scripts/26654-netflix-subtitle-downloader). 
 Then I used python script to scan those subtitles and grep "burps" word, extract timestamps, and subtitle duration.
 It's not perfect, because it mutes the duration of a whole sentence, and has to be adjusted by hand. It also doesn't 
