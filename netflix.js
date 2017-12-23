@@ -218,6 +218,10 @@ chrome.runtime.onMessage.addListener(data => {
     }
 });
 
+if(window.location.pathname.startsWith('/watch')){
+    sheduleNextVideoLookup();
+}
+
 function restartApp() {
     disableApp();
     startLookingForVideoElement();
@@ -246,9 +250,6 @@ function startLookingForVideoElement () {
 function sheduleNextVideoLookup(){
     setTimeout(startLookingForVideoElement, 100);
 }
-
-sheduleNextVideoLookup();
-
 
 function checkTimeLoop(){
     if(videoElement){
