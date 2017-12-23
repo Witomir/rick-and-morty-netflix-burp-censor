@@ -228,7 +228,7 @@ function runApp (video, episodeNumber) {
     currentSeason = getSeasonNumberFromVideoTitle(episodeNumber);
     currentEpisode = getEpisodeNumberFromVideoTitle(episodeNumber);
     appIntervalId = setInterval(checkTimeLoop, 100);
-    addTimestamperButton(currentSeason, currentEpisode);
+    addTimestamperButtons(currentSeason, currentEpisode);
 };
 
 function startLookingForVideoElement () {
@@ -306,20 +306,20 @@ function addLeadingZero(number){
     return number < 10 ? "0" + number : number;
 }
 
-var timestampToTime = function (time) {
-    var seconds = time;
-    var hundredsOfSeconds = Math.round((time*10 - parseInt(time*10)) * 10);
-    var date = new Date(seconds * 1000);
+var timestampToTime = function (timestamp) {
+    var centiseconds = parseInt((timestamp - parseInt(timestamp)) * 10);
+    var date = new Date(timestamp * 1000);
     var hh = addLeadingZero(date.getUTCHours());
     var mm = addLeadingZero(date.getUTCMinutes());
     var ss = addLeadingZero(date.getSeconds());
-    return hh + ":" + mm + ":" + ss + "." + hundredsOfSeconds;
+    return hh + ":" + mm + ":" + ss + "." + centiseconds;
 };
 
 var addFakeArray = function (time) {
-    return `["${time}", 0.5],`;
+    return `["${time}", 1.0],`;
 };
-var addTimestamperButton = function (currentSeason, currentEpisode) {
+
+var addTimestamperButtons = function (currentSeason, currentEpisode) {
     var rootElement = document.querySelector('.PlayerControls--button-control-row');
     var addTimeArea = document.createElement('div');
     addTimeArea.setAttribute('class', 'touchable PlayerControls--control-element nfp-popup-control');
@@ -330,8 +330,8 @@ var addTimestamperButton = function (currentSeason, currentEpisode) {
     addButton.setAttribute('class', 'custom-js-button');
     addButton.addEventListener('click', () => {
         var textarea = document.getElementById('mute-data-content');
-        var time = videoElement.currentTime;
-        var timeWord = addFakeArray(timestampToTime(time));
+        var timestamp = videoElement.currentTime;
+        var timeWord = addFakeArray(timestampToTime(timestamp));
         textarea.value += timeWord + "\n";
     });
 
