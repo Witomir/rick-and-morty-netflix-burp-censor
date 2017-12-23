@@ -223,20 +223,21 @@ function restartApp() {
     startLookingForVideoElement();
 }
 
-function runApp (video, videoTitle) {
-    console.log(videoTitle);
-    currentSeason = getSeasonNumberFromVideoTitle(videoTitle);
-    currentEpisode = getEpisodeNumberFromVideoTitle(videoTitle);
+function runApp (video, episodeNumber) {
+    console.log(episodeNumber);
+    currentSeason = getSeasonNumberFromVideoTitle(episodeNumber);
+    currentEpisode = getEpisodeNumberFromVideoTitle(episodeNumber);
     appIntervalId = setInterval(checkTimeLoop, 100);
     addTimestamperButton(currentSeason, currentEpisode);
 };
 
 function startLookingForVideoElement () {
     var video = document.getElementsByTagName("video");
-    var videoTitle = document.querySelector('.video-title span');
-    if (video.length > 0 && videoTitle != null) {
+    var episodeNumber = document.querySelector('.video-title span');
+    var title = document.querySelector('.video-title h4');
+    if (video.length > 0 && episodeNumber != null && title.innerText == "Rick and Morty") {
         videoElement = video[0];
-        runApp(videoElement, videoTitle.innerText);
+        runApp(videoElement, episodeNumber.innerText);
     } else {
         sheduleNextVideoLookup();
     }
